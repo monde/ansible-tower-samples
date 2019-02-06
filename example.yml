@@ -1,7 +1,9 @@
 - name: Example Playbook
   hosts: all
+  vars:
+    foo: Bar
   tasks:
     - name: Example Tast
       debug:
-        msg: "Example Debug Message"
+        msg: "Example Debug Message {{foo}} {{abc}}"
 
